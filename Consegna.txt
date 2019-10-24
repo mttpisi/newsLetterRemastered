@@ -1,0 +1,4 @@
+Riorganizzare le classi con meno moduli possibili
++typescript -js
+email DONE - codicefiscale - pagamenti - telefono DONE -> Classi
+metodo di validazione (per email, codicefiscale, telefono?)
