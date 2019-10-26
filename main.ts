@@ -10,9 +10,7 @@ this.addUtente("SELEZIONI","email3@email.it",true,"Giuseppe","Bianchi","33888800
 this.addUtente("GRADUATORIA","email4@email.it",true,"Giovanni","Verdi","3377770000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25);
 this.addUtente("ISCRITTO","email5@email.it",true,"Maria","Azzurri","3366660000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25);
 this.addUtente("ALLIEVO","email6@email.it",true,"Giacomo","Arancioni","3355550000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25,"PasswordStraSegreta",true);
-type paga = number;
-let pagaDoc:paga = 2000
-this.addUtente("DOCENTE","emailDoc@email.it",true,pagaDoc);
+this.addUtente("DOCENTE","emailDoc@email.it",true,2000 );
 
 
 //RIFARE TUTTO DA 0!
