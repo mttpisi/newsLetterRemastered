@@ -4,13 +4,15 @@ import * as userData from "./modules/usersData";
 const utenti: any = [];
 
 
-this.addUtente("NEWSLETTER","email@email.it",true);
-this.addUtente("INTERESSATO","email2@email.it",true,"Marco","Rossi","3399990000")
-this.addUtente("SELEZIONI","email3@email.it",true,"Giuseppe","Bianchi","3388880000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera");
-this.addUtente("GRADUATORIA","email4@email.it",true,"Giovanni","Verdi","3377770000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25);
-this.addUtente("ISCRITTO","email5@email.it",true,"Maria","Azzurri","3366660000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25);
-this.addUtente("ALLIEVO","email6@email.it",true,"Giacomo","Arancioni","3355550000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25,"PasswordStraSegreta",true);
-this.addUtente("DOCENTE","emailDoc@email.it",true,2000 );
+utenti.push(new users.UtenteNewsletter("email@email.it",true));
+utenti.push(new users.UtenteInteressato("email2@email.it",true,"Marco","Rossi","3399990000"));
+utenti.push(new users.UtenteSelezioni("email3@email.it",true,"Giuseppe","Bianchi","3388880000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera"));
+utenti.push(new users.UtenteGraduatoria("email4@email.it",true,"Giovanni","Verdi","3377770000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25));
+utenti.push(new users.Iscritto("email5@email.it",true,"Maria","Azzurri","3366660000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25));
+utenti.push(new users.Allievo("email6@email.it",true,"Giacomo","Arancioni","3355550000","CodiceFiscale","CartaIdentita","Diploma","Curriculum","Lettera",30,25,"PasswordStraSegreta"));
+utenti.push(new users.Docente("emailDoc@email.it",true,2000));
+
+
 
 
 //RIFARE TUTTO DA 0!

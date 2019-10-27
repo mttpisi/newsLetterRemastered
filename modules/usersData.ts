@@ -1,5 +1,5 @@
 export class Email{
-    private _email:string
+    private _email:string = "";
     constructor(){}
 
     get indirizzo(){
@@ -14,7 +14,7 @@ export class Email{
 }
 
 export class CodiceFiscale{
-    private _codice:string
+    private _codice:string = "";
     constructor(){}
     
     get codice(){
@@ -29,7 +29,7 @@ export class CodiceFiscale{
 }
 
 export class Telefono{
-    private _numero:string
+    private _numero:string = "";
     constructor(){}
 
     get numero(){
@@ -105,4 +105,5 @@ export function validate(input:any,tipo:string):boolean {
         default:
             break;
     }
+    return false;
 }

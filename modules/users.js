@@ -44,6 +44,7 @@ var userType;
 var UtenteNewsletter = /** @class */ (function () {
     function UtenteNewsletter(iEmail, privacy) {
         this.privacy = privacy;
+        this._tipoUtente = 0;
         this.tipoUtente = 0;
         this.email = new userData.Email();
         this.email.indirizzo = iEmail;

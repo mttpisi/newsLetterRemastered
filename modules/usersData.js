@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Email = /** @class */ (function () {
     function Email() {
+        this._email = "";
     }
     Object.defineProperty(Email.prototype, "indirizzo", {
         get: function () {
@@ -20,6 +21,7 @@ var Email = /** @class */ (function () {
 exports.Email = Email;
 var CodiceFiscale = /** @class */ (function () {
     function CodiceFiscale() {
+        this._codice = "";
     }
     Object.defineProperty(CodiceFiscale.prototype, "codice", {
         get: function () {
@@ -38,6 +40,7 @@ var CodiceFiscale = /** @class */ (function () {
 exports.CodiceFiscale = CodiceFiscale;
 var Telefono = /** @class */ (function () {
     function Telefono() {
+        this._numero = "";
     }
     Object.defineProperty(Telefono.prototype, "numero", {
         get: function () {
@@ -118,5 +121,6 @@ function validate(input, tipo) {
         default:
             break;
     }
+    return false;
 }
 exports.validate = validate;

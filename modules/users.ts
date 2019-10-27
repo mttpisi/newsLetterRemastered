@@ -28,7 +28,7 @@ enum userType {
 } */
 
 export class UtenteNewsletter{
-    protected _tipoUtente:userType;
+    protected _tipoUtente:userType = 0;
     public email:userData.Email;
     constructor(
         iEmail:string,
