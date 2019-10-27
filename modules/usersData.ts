@@ -9,6 +9,8 @@ export class Email{
     set indirizzo(newEmail:string){
         if(validate(newEmail,"email")){
             this._email=newEmail;
+        }else{
+            throw new Error("Errore, impossibile cambiare indirizzo email");
         }
     }
 }
@@ -24,6 +26,8 @@ export class CodiceFiscale{
     set codice(newCodice:string){
         if(validate(newCodice,"codiceFiscale")){
             this._codice = newCodice;
+        }else{
+            throw new Error("Errore, impossibile cambiare codice fiscale");
         }
     }
 }
@@ -39,6 +43,8 @@ export class Telefono{
     set numero(newNumero:string){
         if(validate(newNumero,"telefono")){
             this._numero=newNumero;
+        }else{
+            throw new Error("Errore, impossibile cambiare numero di telefono");
         }
     }
 }
@@ -84,7 +90,7 @@ export function validate(input:any,tipo:string):boolean {
             let brokenEmail = input.split("@");
             if(brokenEmail.length == 2 && brokenEmail[0].length != 0 && brokenEmail[1].length != 0){
                 let brokenMailDom = brokenEmail[1].split(".");
-                if(brokenMailDom.length != 2){
+                if(brokenMailDom.length == 2){
                     if(brokenMailDom[1].length >= 2 && brokenMailDom[1].length <=3){
                         return true;
                     }

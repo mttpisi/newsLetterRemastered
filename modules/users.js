@@ -52,14 +52,17 @@ var UtenteNewsletter = /** @class */ (function () {
     ;
     Object.defineProperty(UtenteNewsletter.prototype, "tipoUtente", {
         get: function () {
-            return this.tipoUtente;
+            return this._tipoUtente;
         },
         set: function (newRuolo) {
-            this.tipoUtente = newRuolo;
+            this._tipoUtente = newRuolo;
         },
         enumerable: true,
         configurable: true
     });
+    UtenteNewsletter.prototype.stringTipoUtente = function () {
+        return userType[this._tipoUtente];
+    };
     return UtenteNewsletter;
 }());
 exports.UtenteNewsletter = UtenteNewsletter;

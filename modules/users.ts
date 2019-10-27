@@ -1,13 +1,13 @@
 import * as userData from "./usersData";
 
 enum userType {
-    'NEWSLETTER',
-    'INTERESSATO',
-    'SELEZIONI',
-    'GRADUATORIA',
-    'ISCRITTO',
-    'ALLIEVO',
-    'DOCENTE'
+    NEWSLETTER,
+    INTERESSATO,
+    SELEZIONI,
+    GRADUATORIA,
+    ISCRITTO,
+    ALLIEVO,
+    DOCENTE
 };
 
 /* export class Utente{
@@ -40,10 +40,14 @@ export class UtenteNewsletter{
     };
     
     get tipoUtente():userType{
-        return this.tipoUtente;
+        return this._tipoUtente;
     }
     set tipoUtente(newRuolo:userType){
-        this.tipoUtente = newRuolo;
+        this._tipoUtente = newRuolo;
+    }
+
+    stringTipoUtente():string{
+        return userType[this._tipoUtente];
     }
 }
 
