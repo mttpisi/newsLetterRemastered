@@ -1,6 +1,13 @@
 "use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var users = require("./modules/users");
+var users = __importStar(require("./modules/users"));
 var utenti = [];
 var errorFlag = true;
 utenti.push(new users.UtenteNewsletter("email@email.it", true));
@@ -17,15 +24,15 @@ var res1 = lookFor(utenti, "cognome", "Bianchi");
 var res2 = lookFor(utenti, "email", "emailDoc@email.it");
 var res3 = lookFor(utenti, "telefono", "3366660000");
 var res4 = lookFor(utenti, "codicefiscale", "CodiceFiscale123");
-/* console.log(res);
+console.log(res);
 console.log("1-_-_-_-");
 console.log(res1);
-console.log("2-_-_-_-"); */
+console.log("2-_-_-_-");
 console.log(res2);
 console.log("3-_-_-_-");
-/* console.log(res3);
+console.log(res3);
 console.log("4-_-_-_-");
-console.log(res4); */
+console.log(res4);
 function lookFor(array, type, searchValue) {
     var results = [];
     switch (type) {
@@ -126,3 +133,4 @@ function lookFor(array, type, searchValue) {
             break;
     }
 } */ 
+//# sourceMappingURL=main.js.map

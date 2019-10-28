@@ -133,3 +133,4 @@ function validate(input, tipo) {
     return false;
 }
 exports.validate = validate;
+//# sourceMappingURL=usersData.js.map
